@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="OpenIddict.Abstractions" Version="4.4.0" />
+    <PackageReference Include="Scribble.Identity.Authorization" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scribble.Content.Application\Scribble.Content.Application.csproj" />
+    <ProjectReference Include="..\Scribble.Content.Models\Scribble.Content.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\Groups\" />
+    <Folder Include="Controllers\V1\" />
+  </ItemGroup>
+
+</Project>
